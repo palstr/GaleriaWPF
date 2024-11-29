@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="OBRAZ OBRAZY" Height="450" Width="800">
+    <UniformGrid Columns="3">
+        <Button Click="Button_Click">LEWO</Button>
+
+        <Image x:Name="image" Source="obraz1.jpg"/>
+
+        <Button Click="Button_Click_1">PRAWO</Button>
+        
+        <Button Click="Button_Click_2">POLUB</Button>
+        
+        <TextBlock HorizontalAlignment="Center" FontSize="49" x:Name="LiczbaPolub">
+            0 polubień
+        </TextBlock>
+        
+        <Button Click="Button_Click_3">RESET</Button>
+    </UniformGrid>
+</Window>
